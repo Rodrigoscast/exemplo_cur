@@ -1,0 +1,262 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+  
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+a:hover{
+	color: '';
+    text-decoration: '';
+}
+
+input:focus {
+	outline: none;
+	border: none !important;
+	background: #fbfbfb;
+}
+
+input:focus-visible {
+	outline: none;
+	outline-offset: none;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	float: left;
+}
+
+.user {
+	width: 35px;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%"
+}
+
+.foto {
+	margin: 10px;
+	border-radius: 20px 20px;
+	padding: 5px;
+	border: 1px solid #DCDCDC;
+}
+
+.foto:hover {
+	-ms-transform: rotate(-7deg); /* IE 9 */
+	-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+	transform: rotate(-7deg);
+}
+input[type=text]:focus, input[type=text]:focus, 
+input[type=number]:focus, input[type=date]:focus, 
+input[type=password]:focus, 
+input[type=file]:focus,textarea, select {
+	border: 3px solid #555;
+}
+
+input[type=submit]{
+	-webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+	background-color: white;
+	border: 1px solid #555;
+}
+
+.button:hover, a:hover {
+    background-color: #555; /* Green */
+    color: white;
+}
+
+.barra-nav{
+	width: 100%;
+	height: 8vw;
+	background: rgb(251 251 251 / 67%);
+	position: fixed;
+	z-index: 10;
+	display: none;
+    flex-direction: column;
+}
+
+.navbar-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#resenha img{
+	height: 7vw;
+    width: auto;
+    margin: 5px;
+	min-height: 50px;
+}
+
+a{
+	color: black !important;
+}
+
+a:hover{
+	color: black !important;
+	background-color: transparent;
+}
+
+a:hover {
+    background-color: transparent !important;
+}
+
+.usuario-topo{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+}
+
+#usuario-drop{
+	height: 50px; 
+	background-color: transparent; 
+	padding: 0; 
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+	position: relative;
+	display: flex;
+	border-radius: 0 50px 50px 0;
+	align-items: center;
+    justify-content: right;
+}
+
+.search-input {
+	display: none;
+    border: none;
+    padding-left: 10px;
+    border-radius: 30px 50px 50px 30px;
+    width: 6.5vw;
+    background: white;
+    height: 4vw;
+    position: absolute;
+	box-shadow: 0 0 7px 0;
+	font-size: 1.5vw;
+	min-height: 35px;
+}
+
+.search-button {
+	background-color: #3498dba1;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: 12;
+	min-width: 35px;
+    min-height: 35px;
+}
+
+.search-icon {
+	width: 4vw;
+    height: 4vw;
+}
+
+.campos-pesquisa{
+	width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item-menu {
+	max-width: 100%;
+    font-size: calc(1.5vw + 0.1rem);
+    line-height: 1.2;
+}
+
+.navbar-nav{
+	width: 100%;
+    font-size: 2vw;
+}
+
+.login {
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtros{
+	display: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 0 0 0;
+    border-top: 1px solid #4e4e4e96;
+    margin: 5px 15px;
+}
+
+@media (max-width: 992px) {
+	.search-input {
+		display: flex;
+		width: 48vw;
+	}
+
+	.filtros{
+		display: flex;
+	}
+
+	.barra-nav{
+		height: min-content;
+	}
+}
+
+.filtro-item {
+	border: 1px solid #999797;
+    border-radius: 15px;
+    padding: 2px 11px;
+    width: min-content !important;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto-item {
+    width: 30%;
+    height: auto;
+    max-width: 250px;
+    min-width: 150px;
+    margin: 5px;
+}
+
+.caption {
+	display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.img-div {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 280px;
+}
+
+.thumbnail {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.bloco-geral {
+    display: flex;
+    flex-direction: row;
+}
